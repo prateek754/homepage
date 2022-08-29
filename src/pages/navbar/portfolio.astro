@@ -1,0 +1,137 @@
+---
+import { TextSection } from '@odyssey-theme/components';
+import Layout from '../../layouts/Page.astro';
+import HeroSection from '../../components/sections/heros/HeroSection.astro';
+
+const seo = {
+	title: 'Portfolio | Prateek Sahu',
+	description: 'Portfolio',
+};
+---
+
+<Layout {seo}>
+	<HeroSection>
+		<div slot="text-container">
+			<h1>Education </h1>
+      <p>
+        <ol>
+				  <li>🎓 Masters in Psychology, University of Alberta, Canada, 2019-2022 </li>
+          <li>🎓 Project Student, National Center for Biological Sciences, India, 2018-2019 </li>
+          <li>🎓 Bachelors and Masters in Biological Sciences, IISER Kolkata, India 2013-2018  </li>
+        </ol>
+      </p>
+      <h1>Interests </h1>
+      <p>
+        <ul>
+				  <li>Animal Behaviour, Mechanism of Behaviour</li>
+          <li>Cognitive Neuroscience, Behavioural Ecology</li>
+          <li>Auditory perception, Bioacoustics</li>
+          <li>Behavioural genetics</li>
+        </ul>
+      </p>
+		</div>
+    <picture slot="image-container">
+      <img
+        src="/assets/images/home/portfolio.jpg"
+        alt="Astro Odyssee"
+        id="home-hero-image"
+      />
+    </picture>
+	</HeroSection>
+
+  <TextSection narrow>
+    <h3>Here's my <a href ="/CV_Prateek_Kumar_Sahu.pdf">Curriculum vitae</a> and <a href="https://scholar.google.com/citations?user=PaXuXvQAAAAJ&hl=en">Google Scholar</a> </h3>
+    <h1>Research Projects</h1>
+    <h3> 2. Reunification of arificially fragmented ant conlonies </h3>
+    <p>
+      Diacamma indicum is an queenless ponerine ant that is found from East India, South India and Sri Lanka. 
+      They form colonies in which the eggs are laid by a mated worker called the gamergate. 
+      Nests provide an organism protection from predators and shelter from adverse changes in the environment.
+    </p>
+    <p>
+      Colony cohesion and cooperation are essential for colonies to procure food acquisition through efficient foraging, 
+      building nests, rearing of juveniles, survival in adverse conditions, group defence and protection from predation. 
+      However, colony cohesion is disrupted when nests get destroyed and colonies are left exposed and vulnerable. 
+      Thus, ant colonies need to relocate to a different nest for their survival.
+    </p>
+    <p>
+      Relocation is a costly process in terms of time and energy and involves risks, such as predation, loss of resources, 
+      and colony fragmentation. Diacamma indicum colonies split into multiple temporary fragments before reuniting to a single site during 
+      the relocation in the natural habitat of these ants. We have tried to understand this reunification process by artificially fragmented 
+      the ant colonies in controlled laboratory conditions. When colonies were artificially fragmented,they mostly (25/30) reunified into a single nest. 
+      When the quality of the nest occupied by the sole reproductive was good, colonies reunified at this address. 
+      However, quality of new nest is more important than her presence as colonies choose the risk of relocating her when she was in a suboptimal nest. 
+      We have also used network analysis to better understand the reunification process.
+    </p>
+    <p>
+      <h4>Publication: <a href="https://doi.org/10.1016/j.beproc.2018.10.017"<a>Sahu, P.K., Kolay, S. & Annagiri, S. To reunite or not to: Study on artificially fragmented Diacamma indicum colonies. Behavioural processes</a></h4> 
+    </p>
+    <h3> 1. Personality traits of the shoals of climbing perch </h3>
+    <p>
+      Anabas testudineus, the climbing perch, is a species of fish in the family Anabantidae. 
+      It is native to Asia. They possess a labyrinth organ, a structure in the head which allows it to breathe atmospheric oxygen. 
+      Fish of this family are commonly seen gulping at air at the surface of the water. 
+      In their wild habitat these fishes are often found near the surface of water.
+    </p>
+    <p>
+      We had worked on personality traits of the shoals of climbing perch. 
+      We asked whether there is consistency among different methods for testing of personality traits. 
+      Further, we looked at how the personality traits affect the decision making in this species.
+    </p>
+    <h1>Workshops & Symposiums </h1>
+    <h3> 4. ESEB Ambassadors of Evolution workshop </h3>
+    <p>
+      The Ambassadors of Evolution Workshop funded by the European Society For Evolutionary Biology (ESEB) had been organised by 
+      the Behaviour and Ecology lab of IISER Kolkata with help of convener of the workshop Professor Dr. Anindita Bhadra.
+      </p>
+
+      <p>
+     The children of classes V to VIII of the Oriental Public School, Kalyani participated in the two day workshop at IISER Kolkata Campus.
+     The aim of the workshop was to introduce basic concepts in evolution to the children through short lectures and fun experiments.
+    </p>
+     About 50 students, who were participated in the workshop, presented their understanding of evolution to their peers in an open science fair at their school on 8th September 2017.
+
+     I was part of this programme as volunteer to help a group of students understand the basic concepts of evolution.
+
+    <h3> 3.FIMB Symposium </h3>
+    <p>
+       The Frontiers in Modern Biology(FIMB) symposium was organised by the Department Biological Sciences of IISER, Kolkata on 5-6th December 2015.
+      </p>
+      <p>
+           The symposium was comprised of invited talks by eminent scientists along with student posters. 
+        The symposium covered diverse areas of modern biology across three main sessions- disease biology, genomics and evolution and interdisciplinary areas in biology.
+    </p>
+    <h3> 2.10th Year Celebration of IISER Kolkata Advances in Life Sciences </h3>
+    <p>
+       The 10th Year Celebration of IISER Kolkata Advances in Life Sciences was organised by the Department Biological Sciences of IISER, Kolkata on 13-15th January 2017.
+      </p>
+      <p>
+        The symposium was comprised of invited talks by eminent scientists along with student posters.
+        The symposium showcased modern biology in its diverse glory over three main sessions – Disease Biology, Genomics and Evolution and Interdisciplinary Biology.
+    </p>
+    <h3> 1.Workshop on Cyberspace and Cyber Security </h3>
+    <p>
+       The Workshop on Cyberspace and Cyber Security was organised by IISER Kolkata on November 4, 2017. The workshop was consisted of a series of lectures on
+      </p>
+      <p>
+        <ul>
+          <li>Cyberspace: Privacy and Security Issues by Prof. Chandan Mazumdar</li>
+          <li> Quantum technology for hacker-free Society by Prof. Prasanta Panigrahi</li>
+          <li>Introduction to the Quantum world 101 and some 010 by Dr. Rick Mukherjee</li>
+          <li>Cyber Security: Attacks and Countermeasures by Prof. Dipanwita Roy Chowdhury</li>
+          <li>Digital Security: Do We Need to Get Paranoid? by Dr. P. A. Sreeram</li>
+          <li>Aspects of Quantum Cryptography by Dr. Goutam Paul</li>
+        </ul>
+    </p>
+
+  </TextSection>
+</Layout>
+
+<style>
+  li{
+    margin: 25px 0;
+}
+  p {
+    margin: 25px 0;
+  }
+</style>

@@ -1,0 +1,86 @@
+---
+import {
+  AnnouncementBar,
+	Button,
+	CustomerQuoteSection,
+	ThreeColumnTextSection,
+	YouTubeEmbedSection,
+  StickyTextImageSection,
+  CtaCardSection
+} from '@odyssey-theme/components';
+import Layout from '../../layouts/Page.astro';
+import TextAndImageHero from '../../components/sections/heros/TextAndImageHero.astro';
+
+
+
+const seo = {
+	title: 'Comparing classification methodologies| Prateek Sahu',
+	description: 'Comparing classification methodologies | Prateek Sahu',
+};
+---
+
+<AnnouncementBar text="" slot="announcement-bar"/>
+
+<Layout seo={seo} >
+	<TextAndImageHero reversed>
+		<div slot="text-container">
+			<h1>Comparing classification methodologies</h1>
+			<p>Comparing methodologies for classification of zebra finch distance calls</p>
+		</div>
+		<div slot="btns-container">
+			<Button href="https://doi.org/10.1121/10.0011401" materialIcon="chevron_right"
+				>Published with The Journal of the Acoustical Society of America  </Button
+			>
+		</div>
+		<picture slot="image-container">
+			<img
+				src="/assets/images/project2/zannfinch.jpg"
+				alt="boxoperant"
+				id="home-hero-image"
+			/>
+		</picture>
+	</TextAndImageHero>
+
+
+
+  <StickyTextImageSection>
+    <div slot="text-container">
+      <h2>Background</h2>
+      <p>
+		Bioacoustic analysis has been used for a variety of purposes including classifying vocalizations for biodiversity monitoring and understanding mechanisms of cognitive processes. 
+		A wide range of statistical methods, including various automated methods, have been used to successfully classify vocalizations based on species, sex, geography, and individual.
+		A comprehensive approach focusing on identifying acoustic features putatively involved in classification is required for the prediction of features necessary for discrimination in the real world.         
+      </p>
+    </div>
+		<picture slot="image-container">
+			<img
+			src="/assets/images/project2/zannfinch2.jpg"
+			alt="boxoperant"
+			id="home-hero-image"
+			/>
+		</picture>
+  </StickyTextImageSection>
+
+	<ThreeColumnTextSection>
+		<div slot="column-1-body">
+			<h2>What?</h2>
+			<p>
+				Classified zebra finch distance calls based on sex with several methods like DFAs, SVMs & ANNs and compared across methodologies. 
+			</p>
+		</div>
+		<div slot="column-2-body">
+			<h2>Why?</h2>
+			<p> Comparisons will help understanding features responsible for the classification and provide us options to choose a classification method.  
+				
+			</p>
+		</div>
+		<div slot="column-3-body">
+			<h2>Results</h2>
+			<p> All methods used here classified the calls with high accuracy. 
+			</p>
+		</div>
+			</ThreeColumnTextSection>
+
+</Layout>
+
+

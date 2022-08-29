@@ -1,0 +1,67 @@
+---
+import ContactForm from '../../components/forms/ContactForm.astro';
+import Layout from '../../layouts/Page.astro';
+import { Container } from '@odyssey-theme/components';
+
+const seo = {
+	title: 'Contact | Astro Odyssey Theme',
+	description: 'Contact Page',
+};
+---
+
+<Layout seo={seo}>
+	<Container>
+		<section class="contact-hero__section">
+			<div class="contact-hero__text-section">
+				<h1>About Me</h1>
+				<p> Hi ! I am a graduate student at University of Alberta, CA in the Psychology department. 
+					I work on auditory perception of songbirds with Dr. Christopher Sturdy at Songbird Neuroetholgy Lab.
+					I have completed my 5 Year Integrated BS-MS degree from IISER Kolkata, India, in the department of Biological Sciences. 
+					I worked on reunification of artifically fragmented <i>Diacamma indicum</i> ant colonies with Dr. Sumana Annagiri at the ant lab. 
+					I have worked on sugar elicited search behaviour of Drosophila with Dr. Axel Brockmann at Bee lab, National Center for Biological Sciences, India.
+				</p>
+				<p> My interests include: Photography, origami, digital arts, web development, data scraping & analysis, reading books, and exploring science-fiction.
+					If I am not busy with my research work, I would be working on a side project. Feel free to reach out to me for collaboration or just to chat if any of my projects sticks out.</p>
+				<div>
+					<p>
+						<em></em>  <em
+							><a href="mailto:prateek6289@gmail.com">prateek6289 at gmail dot com</a
+							></em
+						>
+					</p>
+				</div>
+			</div>
+			<div class="col-2__container">
+				<ContactForm />
+			</div>
+		</section>
+	</Container>
+</Layout>
+
+<style>
+	.contact-hero__section {
+		margin: var(--section-margin) auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		min-height: calc(90vh - var(--navbar-height));
+		gap: 3rem;
+	}
+	.contact-hero__text-section {
+		padding: 2rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-color: var(--theme-surface-1);
+		border-radius: var(--theme-shape-radius);
+	}
+	.col-2__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	@media (max-width: 768px) {
+		.contact-hero__section {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
