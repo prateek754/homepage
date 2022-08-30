@@ -3,9 +3,17 @@ import sitemap from "@astrojs/sitemap";
 
 import mdx from "@astrojs/mdx";
 
+import { defineConfig } from 'astro/config';
+import netlify from '@astrojs/netlify/functions';
+
+export default defineConfig({
+  output: 'server',
+	adapter: netlify(),
+});
+
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://prateeksahu.com/',
+  site: 'https://prateek754.github.io/homepage',
   // Your public domain, e.g.: https://prateeksahu.com/. Used to generate sitemaps and canonical URLs.
   sitemap: true,
   // Generate sitemap (set to "false" to disable)
